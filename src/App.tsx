@@ -5,7 +5,8 @@ import {Html5QrcodeResult} from "html5-qrcode";
 function App() {
 
     const onNewScanResult = (decodedText: string, decodedResult: Html5QrcodeResult) => {
-        console.log(`Scan result: ${decodedText}`, decodedResult);
+        alert(`Scan result: ${decodedText}`)
+        console.log(`Scan result: ${decodedResult}`)
     };
 
     return (
